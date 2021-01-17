@@ -1,11 +1,11 @@
 from pytrends.request import TrendReq
 import pandas as pd
 import time
-startTime = time.time()
-pytrend = TrendReq(hl='en-GB', tz=360)
+startTime = time.time() #variable stores the time of program initiation
+pytrend = TrendReq(hl='en-GB', tz=360) #method creates connection to google
 
-colnames = ["Keywords"]
-df = pd.read_csv("trend_keywords_list.csv", names=colnames)
+colnames = ["Keywords"] #name of column
+df = pd.read_csv("trend_keywords_list.csv", names=colnames) #method to start reading from column name colnames
 df2 = df["keywords"].values.tolist()
 df2.remove("Keywords")
 
