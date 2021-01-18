@@ -2,7 +2,7 @@ from pytrends.request import TrendReq
 import pandas as pd
 import time
 startTime = time.time() #variable stores the time of program initiation
-pytrend = TrendReq(hl='en-GB', tz=360) #method creates connection to google
+pytrend = TrendReq(hl='en-US', tz=360) #method creates connection to google
 
 colnames = ["Keywords"] #name of column
 df = pd.read_csv("trend_keywords_list.csv", names=colnames) #method to start reading from column name colnames
