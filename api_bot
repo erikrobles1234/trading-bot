@@ -6,7 +6,7 @@ pytrend = TrendReq(hl='en-GB', tz=360) #method creates connection to google
 
 colnames = ["Keywords"] #name of column
 df = pd.read_csv("trend_keywords_list.csv", names=colnames) #method to start reading from column name colnames
-df2 = df["keywords"].values.tolist()
+df2 = df["Keywords"].values.tolist()
 df2.remove("Keywords")
 
 dataset = []
